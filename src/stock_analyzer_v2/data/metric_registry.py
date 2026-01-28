@@ -5,7 +5,7 @@ from stock_analyzer_v2.data.enums.metric_category import MetricCategory
 from stock_analyzer_v2.data.models.metric import MetricDefinition
 
 
-MetricDefinition: dict[StockMetric, MetricDefinition] = {
+METRICS: dict[StockMetric, MetricDefinition] = {
     StockMetric.pe_ratio: MetricDefinition(
         metric=StockMetric.pe_ratio,
         category=MetricCategory.valuation,
@@ -21,6 +21,7 @@ MetricDefinition: dict[StockMetric, MetricDefinition] = {
     StockMetric.free_cash_flow: MetricDefinition(
         metric=StockMetric.free_cash_flow,
         category=MetricCategory.cash_flow,
-        higher_is_better=False
+        higher_is_better=True,
+        is_ratio=False
     )
 }
