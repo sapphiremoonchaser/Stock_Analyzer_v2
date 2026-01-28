@@ -1,4 +1,4 @@
-from stock_analyzer_v2.data.metric_registry import METRICS
+from stock_analyzer_v2.data.registries.metric_registry import METRICS
 from stock_analyzer_v2.data.enums.metrics import StockMetric
 from stock_analyzer_v2.data.enums.metric_category import MetricCategory
 
