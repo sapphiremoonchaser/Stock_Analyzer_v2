@@ -3,7 +3,7 @@ name = "stock_analyzer"
 version = "1.0.0"
 description = "Stock analysis tool using yfinance and visualization libraries"
 readme = "README.md"           # optional but recommended
-requires-python = ">=3.12"      # or >=3.10, >=3.11 — pick what you actually support
+requires-python = ">=3.11"      # or >=3.10, >=3.11 — pick what you actually support
 dependencies = [
     "yfinance >= 0.2.40",      # current real version range
     "pandas >= 2.2.0",
