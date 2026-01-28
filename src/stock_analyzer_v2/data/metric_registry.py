@@ -1,3 +1,5 @@
+"""This will be used for filtering, scoring, and the UI schema
+"""
 from stock_analyzer_v2.data.enums.metrics import StockMetric
 from stock_analyzer_v2.data.enums.metric_category import MetricCategory
 from stock_analyzer_v2.data.models.metric import MetricDefinition
