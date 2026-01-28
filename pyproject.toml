@@ -7,6 +7,7 @@ requires-python = ">=3.11"      # or >=3.10, >=3.11 — pick what you actually s
 dependencies = [
     "yfinance >= 0.2.40",      # current real version range
     "pandas >= 2.2.0",
+    "pydantic >= 2.12.5",
 ]
 
 [project.optional-dependencies]
