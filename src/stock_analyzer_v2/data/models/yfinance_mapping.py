@@ -1,6 +1,6 @@
 from pydantic import (
     BaseModel,
-    ContentType, ConfigDict,
+    ConfigDict
 )
 from stock_analyzer_v2.data.enums.yfinance_source import YFinanceSource
 
