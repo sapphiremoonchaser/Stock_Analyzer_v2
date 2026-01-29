@@ -13,3 +13,4 @@ class YFinanceFieldMapping(BaseModel):
     model_config = ConfigDict(
         frozen=True
     )
+
