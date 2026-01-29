@@ -27,7 +27,8 @@ def test_fetch_financial_time_series(monkeypatch):
         {
             pd.Timestamp("2023-12-31"): [100],
             pd.Timestamp("2022-12-31"): [90]
-        }
+        },
+        index=['Total Revenue']
     )
 
     mock_ticker = MagicMock()
