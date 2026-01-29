@@ -1,4 +1,3 @@
-from collections.abc import mappingproxy
 from typing import Any
 
 import yfinance as yf
@@ -22,7 +21,7 @@ class YFinanceFetcher:
         field:str
     ) -> Any | None:
         """
-        This is a helper function for fetch_data().
+        This is a helper function for fetch_metric().
         A field is given that will match yfinance. Ex: marketCap instead of market_cap)
         Data is then pulled via yfinance's info() for that field.
         :param field: ticker you need to pull info from
@@ -62,8 +61,7 @@ class YFinanceFetcher:
 
     def fetch_metric(
         self,
-        metric: StockMetric,
-        source: YFinanceSource,
+        metric: StockMetric
     ) -> Any | None:
         """
         Fetch a raw metric value or time series from yfinance.
