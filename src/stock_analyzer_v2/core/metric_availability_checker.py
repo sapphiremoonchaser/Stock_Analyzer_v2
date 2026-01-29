@@ -1,5 +1,3 @@
-from distutils.command.install import value
-
 from stock_analyzer_v2.core.yfinance_fetcher import YFinanceFetcher
 from stock_analyzer_v2.data.enums.metrics import StockMetric
 from stock_analyzer_v2.core.models.metric_availability import MetricAvailability
@@ -25,7 +23,7 @@ class MetricAvailabilityChecker:
             if value is None:
                 missing.add(metric)
             else:
-                available.add(value)
+                available.add(metric)
 
         return MetricAvailability(
             available=available,
