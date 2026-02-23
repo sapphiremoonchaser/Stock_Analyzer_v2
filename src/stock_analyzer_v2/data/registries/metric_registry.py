@@ -39,15 +39,15 @@ METRICS: dict[StockMetric, MetricDefinition] = {
         higher_is_better=False
     ),
 
-    StockMetric.free_cash_flow: MetricDefinition(
-        metric=StockMetric.free_cash_flow,
-        category=MetricCategory.cash_flow,
+    StockMetric.revenue: MetricDefinition(
+        metric=StockMetric.revenue,
+        category=MetricCategory.valuation,
         higher_is_better=True,
         is_ratio=False
     ),
 
-    StockMetric.revenue: MetricDefinition(
-        metric=StockMetric.revenue,
+    StockMetric.free_cash_flow: MetricDefinition(
+        metric=StockMetric.free_cash_flow,
         category=MetricCategory.cash_flow,
         higher_is_better=True,
         is_ratio=False
