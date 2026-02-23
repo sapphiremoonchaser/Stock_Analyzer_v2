@@ -25,7 +25,7 @@ def test_revenue_mapping():
     mapping = YFINANCE_METRIC_MAP[StockMetric.revenue]
 
     # Check for correct attributes
-    assert mapping.source == YFinanceSource.info
+    assert mapping.source == YFinanceSource.financials
     assert mapping.field == 'Total Revenue'
     assert mapping.is_time_series is True
 
