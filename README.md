@@ -2,28 +2,29 @@
 
 ### Adding Metrics
 
-1. Add the metric name to 
+1. Add the metric name to  
     `stock_analyzer_v2/data/enums/metrics.py`  
   
 
-2. If it is a new metric category, add the category to 
-   `stock_analyzer_v2/data/enums/metric_category.py`
+2. If it is a new metric category, add the category to  
+    `stock_analyzer_v2/data/enums/metric_category.py`
   
 
-3. Add to Metric Registry, 
-   `stock_analyzer_v2/data/registries/metric_registry.py`
+3. Add to Metric Registry,  
+    `stock_analyzer_v2/data/registries/metric_registry.py`
   
 
-4. If it's a new yfinance source add to 
-   `stock_analyzer_v2/data/enums/yfinance_source.py` and 
-   `stock_analyzer_v2/core/yfinance_fetcher.py`
+4. If it's a new yfinance source add to  
+    `stock_analyzer_v2/data/enums/yfinance_source.py` and  
+    `stock_analyzer_v2/core/yfinance_fetcher.py`
   
 
-5. Add to YFINANCE_METRIC_MAP, 
+5. Add to YFINANCE_METRIC_MAP,  
     `stock_analyzer_v2/data/registries/yfinance_metric_map.py`
+  
 
-6. Add unit tests for new metric
-    `test/data/test_metric_definition.py`
+6. Add unit tests for new metric  
+    `test/data/test_metric_definition.py` and  
     `test/data/test_yfinance_mapping.py`
   
 
