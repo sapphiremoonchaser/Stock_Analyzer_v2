@@ -21,5 +21,9 @@
 
 5. Add to YFINANCE_METRIC_MAP, 
     `stock_analyzer_v2/data/registries/yfinance_metric_map.py`
+
+6. Add unit tests for new metric
+    `test/data/test_metric_definition.py`
+    `test/data/test_yfinance_mapping.py`
   
 
