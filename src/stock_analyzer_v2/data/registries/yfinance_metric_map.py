@@ -1,4 +1,8 @@
-"""Tells us how the metric is fetched
+"""
+Central registry of mapping of metrics to yfinance sources.
+
+This module defines the YFINANCE_METRIC_MAP dictionary, which serves as the
+authoritative mapping of StockMetrics to a YFinanceSource.
 """
 from stock_analyzer_v2.data.enums.metrics import StockMetric
 from stock_analyzer_v2.data.enums.yfinance_source import YFinanceSource
