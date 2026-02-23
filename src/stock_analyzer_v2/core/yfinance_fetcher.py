@@ -187,7 +187,7 @@ class YFinanceFetcher:
                     mapping.is_time_series
                 )
 
-        except Exception:
+        except (KeyError, IndexError, AttributeError):
             return None
 
         return None
