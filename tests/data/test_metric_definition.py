@@ -13,7 +13,12 @@ def test_pe_ratio_definition_metadata():
 
 
 def test_ev_to_ebitda_definition_metadata():
-    pass
+    ev_to_ebitda = METRICS[StockMetric.ev_to_ebitda]
+
+    # Correct ev_to_ebitda category and attributes
+    assert ev_to_ebitda.category == MetricCategory.valuation
+    assert ev_to_ebitda.higher_is_better is False
+    assert ev_to_ebitda.is_ratio is True
 
 
 def test_revenue_definition_metadata():
