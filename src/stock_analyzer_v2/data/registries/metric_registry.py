@@ -48,7 +48,7 @@ METRICS: dict[StockMetric, MetricDefinition] = {
 
     StockMetric.revenue: MetricDefinition(
         metric=StockMetric.revenue,
-        category=MetricCategory.cash_flow,
+        category=MetricCategory.valuation,
         higher_is_better=True,
         is_ratio=False
     )
