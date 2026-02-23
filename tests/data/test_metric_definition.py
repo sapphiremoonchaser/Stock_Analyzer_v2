@@ -22,7 +22,12 @@ def test_ev_to_ebitda_definition_metadata():
 
 
 def test_revenue_definition_metadata():
-    pass
+    revenue = METRICS[StockMetric.revenue]
+
+    # Correct revenue category and attributes
+    assert revenue.category == MetricCategory.valuation
+    assert revenue.higher_is_better is True
+    assert revenue.is_ratio is False
 
 
 def test_metric_definition_metadata():
