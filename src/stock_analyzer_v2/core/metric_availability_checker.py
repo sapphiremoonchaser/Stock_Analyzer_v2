@@ -14,7 +14,7 @@ from stock_analyzer_v2.core.models.metric_availability import MetricAvailability
 
 class MetricAvailabilityChecker:
     """
-    Evaluates whether or not requested stock metrics are available. It queries yfinance
+    Class used to check whether the requested metric is available in yfinance.
     """
     def __init__(
         self,
@@ -26,10 +26,17 @@ class MetricAvailabilityChecker:
         self,
         metrics: list[StockMetric],
     ) -> MetricAvailability:
+        """
+        Evaluates whether requested stock metrics are available. It queries yfinance and
+        if None is returned the metric is adding to the 'mising' set. If None is not
+        returned, the metric is put into the available set.
+        """
+        # Initialize available and missing sets
         available: set[StockMetric] = set()
         missing: set[StockMetric] = set()
 
         for metric in metrics:
+            # Try to get the value from yfinance
             value = self.fetcher.fetch_metric(metric)
 
             if value is None:
