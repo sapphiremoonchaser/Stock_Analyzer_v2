@@ -11,6 +11,7 @@ pe_ratio = fetcher.fetch_metric(StockMetric.pe_ratio)
 ev_to_ebidta = fetcher.fetch_metric(StockMetric.ev_to_ebitda)
 
 # Fetch revenue
+# revenue[-1:] for most recent
 revenue = fetcher.fetch_metric(StockMetric.revenue)
 
 # Fetch free cash flow
